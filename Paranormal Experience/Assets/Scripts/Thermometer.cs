@@ -11,6 +11,7 @@ public class Thermometer : MonoBehaviour
     private bool is_enabled = false;
     public AudioSource switch_sound;
     private bool rdy = true;
+    public Transform front;
 
     System.Random r = new System.Random();
 
@@ -53,10 +54,12 @@ public class Thermometer : MonoBehaviour
 
     void Update()
     {
+        Debug.DrawRay(this.transform.position, front.forward, Color.red, 1, true);
+
         if (is_enabled)
         {
             RaycastHit hit;
-            if (Physics.Raycast(this.transform.position, this.transform.forward, out hit, 20))
+            if (Physics.Raycast(this.transform.position, front.forward, out hit, 10))
             {
                 if (rdy)
                     StartCoroutine(changeTemp());
