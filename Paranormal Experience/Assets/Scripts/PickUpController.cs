@@ -39,6 +39,7 @@ public class PickUpController : MonoBehaviour
                     equippedItem.transform.localEulerAngles = new Vector3(87.5f, -180, -3.03f);
                 }
 
+
             }
         }
 
@@ -59,7 +60,10 @@ public class PickUpController : MonoBehaviour
                 equippedItem.GetComponent<Thermometer>().Switch();
             if (equippedItem.layer == 11)
                 equippedItem.GetComponent<Phone>().Switch();
-
+            if (equippedItem.layer == 15)
+                equippedItem.GetComponent<Radio>().Switch();
+            if (equippedItem.layer == 16)
+                equippedItem.GetComponent<TVRemote>().Switch();
 
         }
 

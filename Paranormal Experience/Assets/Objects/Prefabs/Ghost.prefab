@@ -151,4 +151,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wanderRadius: 10
   wanderTimer: 1
+  footprint: {fileID: 5160456141895018311, guid: 8fa72f07d1a9a9a4494f221b2589b588, type: 3}
   agent: {fileID: 2376840432579528425}
