@@ -23,7 +23,7 @@ public class RevealInLight : MonoBehaviour
                 continue;
             }
         }
-        Debug.Log(Flashlight.transform.Find("lights").gameObject.transform.Find("Spotlight").gameObject.GetComponent<Light>());
+        // Debug.Log(Flashlight.transform.Find("lights").gameObject.transform.Find("Spotlight").gameObject.GetComponent<Light>());
         this.SpotLight = Flashlight.transform.Find("lights").gameObject.transform.Find("Spotlight").gameObject.GetComponent<Light>();
     }
 

@@ -9,6 +9,7 @@ public class Radio : MonoBehaviour
 {
 
     public GameObject time;
+    public GameObject[] display;
     public AudioSource audioSource;
 
     bool is_enabled;
@@ -48,6 +49,10 @@ public class Radio : MonoBehaviour
         }
 
         time.SetActive(is_enabled);
+        foreach (var item in display)
+        {
+            item.SetActive(is_enabled);
+        }
     }
 
 

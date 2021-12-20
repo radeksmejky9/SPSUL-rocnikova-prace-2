@@ -10,6 +10,7 @@ public class Book : MonoBehaviour
     public Material[] m = new Material[4];
     public bool open;
     public bool written = false;
+    public AudioSource audio;
 
     public void OpenTheBook()
     {
@@ -33,6 +34,7 @@ public class Book : MonoBehaviour
             if (other.tag == "Enemy" && written == false)
             {
                 written = true;
+                audio.Play();
                 bookContent.GetComponent<MeshRenderer>().materials = new Material[] { m[Random.Range(0, 4)] };
             }
         }

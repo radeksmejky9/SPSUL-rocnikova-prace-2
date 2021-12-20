@@ -38,7 +38,12 @@ public class PickUpController : MonoBehaviour
                     equippedItem.transform.parent = equipPosition2;
                     equippedItem.transform.localEulerAngles = new Vector3(87.5f, -180, -3.03f);
                 }
-
+                /*if (hit.transform.gameObject.layer == 15)
+                {
+                    equippedItem.transform.position = equipPosition2.position;
+                    equippedItem.transform.parent = equipPosition2;
+                    equippedItem.transform.localEulerAngles = new Vector3(-180, 0, 180f);
+                }*/
 
             }
         }
@@ -64,6 +69,8 @@ public class PickUpController : MonoBehaviour
                 equippedItem.GetComponent<Radio>().Switch();
             if (equippedItem.layer == 16)
                 equippedItem.GetComponent<TVRemote>().Switch();
+            if (equippedItem.layer == 17)
+                equippedItem.GetComponent<EMF>().Switch();
 
         }
 
