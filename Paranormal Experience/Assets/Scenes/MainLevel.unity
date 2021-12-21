@@ -3863,8 +3863,8 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 12.05
-  MaxDistance: 23.88
+  MinDistance: 1.8500004
+  MaxDistance: 88.04
   Pan2D: 0
   rolloffMode: 2
   BypassEffects: 0
@@ -3874,7 +3874,7 @@ AudioSource:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 0.052284464
+      time: 0.0008547157
       value: 1
       inSlope: -19.133787
       outSlope: -19.133787
@@ -3883,8 +3883,8 @@ AudioSource:
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 0.10456893
-      value: 0.5
+      time: 0.06456801
+      value: 0.491539
       inSlope: -4.783447
       outSlope: -4.783447
       tangentMode: 0
@@ -4289,16 +4289,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2059087242}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &919132147659111292 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8905835189529031082, guid: 3f186932ad777904e8e4afea60603dd8, type: 3}
-  m_PrefabInstance: {fileID: 8599210325475183318}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &919132148277582684 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5175117867371153473, guid: 29bc066a37079f146a61d6987bb2d4d6, type: 3}
-  m_PrefabInstance: {fileID: 5409069003460399901}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2020760720716952700
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4422,11 +4412,11 @@ PrefabInstance:
     - target: {fileID: 2376840432579528407, guid: 218fb2e859df7524e9807a49edae1d00, type: 3}
       propertyPath: footprints.Array.data[0]
       value: 
-      objectReference: {fileID: 919132147659111292}
+      objectReference: {fileID: 8905835189529031082, guid: 3f186932ad777904e8e4afea60603dd8, type: 3}
     - target: {fileID: 2376840432579528407, guid: 218fb2e859df7524e9807a49edae1d00, type: 3}
       propertyPath: footprints.Array.data[1]
       value: 
-      objectReference: {fileID: 919132148277582684}
+      objectReference: {fileID: 5175117867371153473, guid: 29bc066a37079f146a61d6987bb2d4d6, type: 3}
     - target: {fileID: 2376840432579528430, guid: 218fb2e859df7524e9807a49edae1d00, type: 3}
       propertyPath: m_Name
       value: Ghost
