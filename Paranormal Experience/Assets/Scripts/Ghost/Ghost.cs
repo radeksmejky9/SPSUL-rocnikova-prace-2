@@ -16,7 +16,7 @@ public class Ghost : MonoBehaviour
         GhostOrb
     }
 
-    private void Start()
+    private void Awake()
     {
         activeEvidences = new Dictionary<Evidence, bool>();
         bool[] b = new bool[Enum.GetNames(typeof(Evidence)).Length];

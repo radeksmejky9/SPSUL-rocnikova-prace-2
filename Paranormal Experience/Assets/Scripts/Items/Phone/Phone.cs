@@ -32,11 +32,11 @@ public class Phone : MonoBehaviour
 
     private void Start()
     {
-        if (ghost.activeEvidences.TryGetValue(Ghost.Evidence.GhostOrb, out bool ghostOrb))
-        {
-            if (!ghostOrb)
-                cam.GetComponent<Camera>().cullingMask = cam.GetComponent<Camera>().cullingMask & ~(1 << 18);
-        }
+        /* if (ghost.activeEvidences.TryGetValue(Ghost.Evidence.GhostOrb, out bool ghostOrb))
+         {
+             if (!ghostOrb)
+                 cam.GetComponent<Camera>().cullingMask = cam.GetComponent<Camera>().cullingMask & ~(1 << 18);
+         }*/
     }
 
 

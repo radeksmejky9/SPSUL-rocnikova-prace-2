@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Book : MonoBehaviour
 {
-    public Ghost ghost;
     public GameObject openedBook;
     public GameObject closedBook;
     public GameObject bookContent;
@@ -12,7 +11,7 @@ public class Book : MonoBehaviour
     public bool open;
     public bool written = false;
     public AudioSource audio;
-    public bool gw;
+    public bool gw = true;
 
     public void OpenTheBook()
     {
@@ -29,7 +28,7 @@ public class Book : MonoBehaviour
     }
     private void Start()
     {
-        if (ghost.activeEvidences.TryGetValue(Ghost.Evidence.GhostWriting, out bool ghostwriting))
+        if (GameObject.FindGameObjectWithTag("Enemy").GetComponent<Ghost>().activeEvidences.TryGetValue(Ghost.Evidence.GhostWriting, out bool ghostwriting))
         {
             gw = ghostwriting;
         }
