@@ -9,6 +9,7 @@ public class RevealInLight : MonoBehaviour
     public Light SpotLight;
     public GameObject Flashlight;
     public bool isRevealed = false;
+    private bool fp;
 
     private void Start()
     {
@@ -23,8 +24,9 @@ public class RevealInLight : MonoBehaviour
                 continue;
             }
         }
-        // Debug.Log(Flashlight.transform.Find("lights").gameObject.transform.Find("Spotlight").gameObject.GetComponent<Light>());
+
         this.SpotLight = Flashlight.transform.Find("lights").gameObject.transform.Find("Spotlight").gameObject.GetComponent<Light>();
+
     }
 
     private void OnTriggerEnter(Collider other)
@@ -35,8 +37,6 @@ public class RevealInLight : MonoBehaviour
 
     void Update()
     {
-
-
         float lerp = mapValue(Vector3.Distance(SpotLight.transform.position, this.transform.position), 0, 12, 0f, 0.7f);
         if (Mat && SpotLight && isRevealed)
         {
@@ -58,5 +58,6 @@ public class RevealInLight : MonoBehaviour
         }
 
         this.GetComponent<MeshRenderer>().material = Mat;
+
     }
 }

@@ -9,7 +9,7 @@ public class GhostMovement : MonoBehaviour
     public float wanderTimer;
     public GameObject[] footprints;
     public AudioSource audio;
-
+    bool fp;
     private Transform target;
     public NavMeshAgent agent;
     private float timer;
@@ -17,7 +17,10 @@ public class GhostMovement : MonoBehaviour
 
     private void Start()
     {
-        //FootprintSpammer();
+        if (this.GetComponent<Ghost>().activeEvidences.TryGetValue(Ghost.Evidence.Footprints, out bool footprints))
+        {
+            fp = footprints;
+        }
     }
 
     void Update()
@@ -48,14 +51,16 @@ public class GhostMovement : MonoBehaviour
 
     public void FootprintSpammer()
     {
-        a = 0;
-        audio.Play();
-        StartCoroutine("LeaveFootprint");
+        if (fp)
+        {
+            a = 0;
+            audio.Play();
+            StartCoroutine("LeaveFootprint");
+        }
     }
 
     IEnumerator LeaveFootprint()
     {
-        //Debug.Log("footprint created");
         Instantiate(footprints[0], new Vector3(this.transform.position.x, 19.25f, this.transform.position.z), Quaternion.Euler(new Vector3(-90, 180 + this.transform.eulerAngles.y, 0)));
         yield return new WaitForSeconds(0.5f);
         Instantiate(footprints[1], new Vector3(this.transform.position.x, 19.25f, this.transform.position.z), Quaternion.Euler(new Vector3(-90, 180 + this.transform.eulerAngles.y, 0)));

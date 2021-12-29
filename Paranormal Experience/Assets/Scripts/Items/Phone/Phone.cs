@@ -7,12 +7,15 @@ using UnityEngine.UI;
 
 public class Phone : MonoBehaviour
 {
+    public Ghost ghost;
     public GameObject cam;
+    public GameObject wallpaper;
     public GameObject date;
     public GameObject username;
     public GameObject time;
     public GameObject topBarTime;
     public GameObject topBar;
+    DateTime currentTime = DateTime.Now;
     bool is_enabled;
     private void Awake()
     {
@@ -24,21 +27,40 @@ public class Phone : MonoBehaviour
             username.GetComponent<Text>().text += s[i];
         }
 
+
     }
+
+    private void Start()
+    {
+        if (ghost.activeEvidences.TryGetValue(Ghost.Evidence.GhostOrb, out bool ghostOrb))
+        {
+            if (!ghostOrb)
+                cam.GetComponent<Camera>().cullingMask = cam.GetComponent<Camera>().cullingMask & ~(1 << 18);
+        }
+    }
+
+
+
+
     private void Update()
     {
-        DateTime currentTime = DateTime.Now;
-        if (currentTime.Minute < 10)
+
+        if (currentTime != DateTime.Now)
         {
-            time.GetComponent<Text>().text = currentTime.Hour + ":0" + currentTime.Minute;
-            topBarTime.GetComponent<Text>().text = currentTime.Hour + ":0" + currentTime.Minute;
+            currentTime = DateTime.Now;
+            if (currentTime.Minute < 10)
+            {
+                time.GetComponent<Text>().text = currentTime.Hour + ":0" + currentTime.Minute;
+                topBarTime.GetComponent<Text>().text = currentTime.Hour + ":0" + currentTime.Minute;
+            }
+            else
+            {
+                time.GetComponent<Text>().text = currentTime.Hour + ":" + currentTime.Minute;
+                topBarTime.GetComponent<Text>().text = currentTime.Hour + ":" + currentTime.Minute;
+            }
+            date.GetComponent<Text>().text = currentTime.DayOfWeek + ", " + currentTime.ToString("MMMM") + " " + currentTime.Day;
         }
-        else
-        {
-            time.GetComponent<Text>().text = currentTime.Hour + ":" + currentTime.Minute;
-            topBarTime.GetComponent<Text>().text = currentTime.Hour + ":" + currentTime.Minute;
-        }
-        date.GetComponent<Text>().text = currentTime.DayOfWeek + ", " + currentTime.ToString("MMMM") + " " + currentTime.Day;
+
     }
 
 
@@ -58,7 +80,7 @@ public class Phone : MonoBehaviour
 
     void SetActive(bool is_enabled)
     {
-        cam.SetActive(is_enabled);
+        wallpaper.SetActive(is_enabled);
         time.SetActive(!is_enabled);
         date.SetActive(!is_enabled);
         topBar.SetActive(is_enabled);

@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class EMF : MonoBehaviour
 {
-
     bool is_enabled;
     public Material importedMat;
     private Material mat;
@@ -40,7 +39,7 @@ public class EMF : MonoBehaviour
     {
         rdy = false;
         //if emf bum 
-        var i = Random.RandomRange(0, 5);
+        var i = Random.Range(0, 5);
         mat.SetTexture("_EmissionMap", t[i]);
         if (i > 2)
             audio.Play();

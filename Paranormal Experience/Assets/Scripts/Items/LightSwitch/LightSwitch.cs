@@ -11,7 +11,6 @@ public class LightSwitch : MonoBehaviour
 
     public void Switch()
     {
-        Debug.Log("KEKW");
         IsOn = !IsOn;
         this.transform.gameObject.GetComponent<Renderer>().material.color = IsOn == false ? Color.red : Color.green;
 

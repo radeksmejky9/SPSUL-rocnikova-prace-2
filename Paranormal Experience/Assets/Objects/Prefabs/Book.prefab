@@ -49,6 +49,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63d1ab210075a114fa94bb3a4c225cbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ghost: {fileID: 1909036782, guid: 218fb2e859df7524e9807a49edae1d00, type: 3}
   openedBook: {fileID: 5265596272381247659}
   closedBook: {fileID: 2508449217199525578}
   bookContent: {fileID: 5503781402183055680}
@@ -60,6 +61,7 @@ MonoBehaviour:
   open: 0
   written: 0
   audio: {fileID: -6383969469381105585}
+  gw: 0
 --- !u!65 &5481762769721956304
 BoxCollider:
   m_ObjectHideFlags: 0
