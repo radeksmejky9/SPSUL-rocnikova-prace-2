@@ -23,6 +23,8 @@ public class Thermometer : MonoBehaviour
         }
     }
 
+
+
     public void Switch()
     {
         is_enabled = !is_enabled;
@@ -42,10 +44,17 @@ public class Thermometer : MonoBehaviour
     IEnumerator changeTemp()
     {
         rdy = false;
-        //if freezing bum 
-        text1.GetComponent<Text>().text = r.Next(-3, -2).ToString() + "." + r.Next(2, 9).ToString();
-
-        //else bum
+        if (GameObject.FindGameObjectWithTag("Enemy").GetComponent<Ghost>().activeEvidences.TryGetValue(Ghost.Evidence.Freezing, out bool freezing))
+        {
+            if (freezing)
+            {
+                text1.GetComponent<Text>().text = r.Next(-3, -2).ToString() + "." + r.Next(2, 9).ToString();
+            }
+            else
+            {
+                text1.GetComponent<Text>().text = r.Next(15, 18).ToString() + "." + r.Next(2, 9).ToString();
+            }
+        }
 
         yield return new WaitForSeconds(r.Next(0, 3));
         rdy = true;

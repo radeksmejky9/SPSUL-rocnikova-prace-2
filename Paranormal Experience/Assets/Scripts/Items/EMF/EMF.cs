@@ -19,6 +19,7 @@ public class EMF : MonoBehaviour
         model.GetComponent<Renderer>().material = mat;
     }
 
+
     public bool Is_Enabled
     {
         get
@@ -38,15 +39,23 @@ public class EMF : MonoBehaviour
     IEnumerator changeEMF()
     {
         rdy = false;
-        //if emf bum 
-        var i = Random.Range(0, 5);
-        mat.SetTexture("_EmissionMap", t[i]);
-        if (i > 2)
-            audio.Play();
-        else
-            audio.Stop();
-
-        //emf bum
+        if (GameObject.FindGameObjectWithTag("Enemy").GetComponent<Ghost>().activeEvidences.TryGetValue(Ghost.Evidence.EMF, out bool emf))
+        {
+            if (emf)
+            {
+                var i = Random.Range(0, 5);
+                mat.SetTexture("_EmissionMap", t[i]);
+                if (i > 2)
+                    audio.Play();
+                else
+                    audio.Stop();
+            }
+            else
+            {
+                var i = Random.Range(0, 3);
+                mat.SetTexture("_EmissionMap", t[i]);
+            }
+        }
 
         yield return new WaitForSeconds(1f);
         rdy = true;
