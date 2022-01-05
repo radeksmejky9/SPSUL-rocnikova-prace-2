@@ -99,6 +99,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ff7d9cf3eb9bde14bbf672e9e0ac6cff, type: 2}
+    - target: {fileID: 8256544, guid: 47af58fd905aee649a315f604914d38e, type: 3}
+      propertyPath: MaxDistance
+      value: 68.6
+      objectReference: {fileID: 0}
     - target: {fileID: 10869704, guid: 47af58fd905aee649a315f604914d38e, type: 3}
       propertyPath: m_Color.b
       value: 0.78431374
