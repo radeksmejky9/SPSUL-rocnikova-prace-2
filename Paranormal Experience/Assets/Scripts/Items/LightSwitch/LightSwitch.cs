@@ -7,18 +7,19 @@ public class LightSwitch : MonoBehaviour
     bool IsOn = false;
 
     public GameObject[] lights;
+    public AudioSource asource;
 
 
     public void Switch()
     {
+        asource.Play();
         IsOn = !IsOn;
-        this.transform.gameObject.GetComponent<Renderer>().material.color = IsOn == false ? Color.red : Color.green;
 
         for (int i = 0; i < lights.Length; i++)
         {
             if (IsOn)
             {
-                lights[i].GetComponent<Light>().intensity = 3;
+                lights[i].GetComponent<Light>().intensity = 1;
             }
             else
             {

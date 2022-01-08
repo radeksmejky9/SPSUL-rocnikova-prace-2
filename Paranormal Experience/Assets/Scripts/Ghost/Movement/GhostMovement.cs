@@ -61,9 +61,9 @@ public class GhostMovement : MonoBehaviour
 
     IEnumerator LeaveFootprint()
     {
-        Instantiate(footprints[0], new Vector3(this.transform.position.x, 19.25f, this.transform.position.z), Quaternion.Euler(new Vector3(-90, 180 + this.transform.eulerAngles.y, 0)));
+        Instantiate(footprints[0], new Vector3(this.transform.position.x, 20.1f, this.transform.position.z), Quaternion.Euler(new Vector3(-90, 180 + this.transform.eulerAngles.y, 0)));
         yield return new WaitForSeconds(0.5f);
-        Instantiate(footprints[1], new Vector3(this.transform.position.x, 19.25f, this.transform.position.z), Quaternion.Euler(new Vector3(-90, 180 + this.transform.eulerAngles.y, 0)));
+        Instantiate(footprints[1], new Vector3(this.transform.position.x, 20.1f, this.transform.position.z), Quaternion.Euler(new Vector3(-90, 180 + this.transform.eulerAngles.y, 0)));
 
         yield return new WaitForSeconds(1f);
 

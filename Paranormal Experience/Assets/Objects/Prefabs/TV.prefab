@@ -62,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 1841185db3e04d94d9ce85d1254b0dd6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -113,7 +113,7 @@ VideoPlayer:
   m_TargetTexture: {fileID: 0}
   m_TimeReference: 0
   m_TargetMaterialRenderer: {fileID: 0}
-  m_TargetMaterialProperty: _MainTex
+  m_TargetMaterialProperty: _EmissionMap
   m_RenderMode: 3
   m_AspectRatio: 2
   m_DataSource: 0
@@ -257,7 +257,7 @@ RectTransform:
   m_GameObject: {fileID: 2677409909943885859}
   m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: -35.4}
-  m_LocalScale: {x: 500, y: 500, z: 500}
+  m_LocalScale: {x: 320, y: 320, z: 320}
   m_Children:
   - {fileID: 377809840}
   m_Father: {fileID: 0}
@@ -328,6 +328,6 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -5384024921734695490, guid: 27817ceae7828274daed07a5a21b0671, type: 3}
