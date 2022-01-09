@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Phone : MonoBehaviour
+public class Phone : Item, ISwitchable
 {
     public Ghost ghost;
     public GameObject cam;

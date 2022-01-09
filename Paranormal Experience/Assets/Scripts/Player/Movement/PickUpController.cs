@@ -38,12 +38,6 @@ public class PickUpController : MonoBehaviour
                     equippedItem.transform.parent = equipPosition2;
                     equippedItem.transform.localEulerAngles = new Vector3(87.5f, -180, -3.03f);
                 }
-                /*if (hit.transform.gameObject.layer == 15)
-                {
-                    equippedItem.transform.position = equipPosition2.position;
-                    equippedItem.transform.parent = equipPosition2;
-                    equippedItem.transform.localEulerAngles = new Vector3(-180, 0, 180f);
-                }*/
 
             }
         }
@@ -53,6 +47,7 @@ public class PickUpController : MonoBehaviour
             equippedItem.transform.parent = null;
             equippedItem.GetComponent<Rigidbody>().isKinematic = false;
             equippedItem.GetComponent<Collider>().enabled = true;
+            equippedItem.GetComponent<Rigidbody>().AddForce(cam.GetComponent<Transform>().forward * 300);
             equippedItem = null;
             slotFull = false;
         }
@@ -80,19 +75,14 @@ public class PickUpController : MonoBehaviour
             {
                 if (hit.transform.gameObject.tag == "Floor")
                 {
-                    equippedItem.GetComponent<Salt>().placeSalt(hit);
+                    equippedItem.GetComponent<Salt>().Place(hit);
                 }
             }
             if (equippedItem.layer == 9)
             {
                 if (hit.transform.gameObject.tag == "Floor")
                 {
-                    equippedItem.transform.parent = null;
-                    equippedItem.GetComponent<Rigidbody>().isKinematic = false;
-                    equippedItem.GetComponent<Collider>().enabled = true;
-                    equippedItem.GetComponent<Book>().OpenTheBook();
-                    equippedItem.transform.position = hit.point;
-                    equippedItem.transform.rotation = new Quaternion(0, 0, 0, 0);
+                    equippedItem.GetComponent<Book>().Place(hit);
                     equippedItem = null;
                     slotFull = false;
                 }

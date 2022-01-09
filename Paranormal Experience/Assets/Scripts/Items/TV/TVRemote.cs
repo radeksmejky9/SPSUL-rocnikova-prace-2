@@ -6,7 +6,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Video;
 
-public class TVRemote : MonoBehaviour
+public class TVRemote : Item, ISwitchable
 {
 
     public GameObject tv;

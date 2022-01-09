@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EMF : MonoBehaviour
+public class EMF : Item, ISwitchable
 {
     bool is_enabled;
     public Material importedMat;
@@ -69,7 +69,6 @@ public class EMF : MonoBehaviour
             rdy = true;
             mat.EnableKeyword("_EMISSION");
             mat.SetTexture("_EmissionMap", t[0]);
-            //mat.SetColor("_EmissionColor", );
         }
         else
         {

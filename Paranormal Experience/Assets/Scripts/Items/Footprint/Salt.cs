@@ -2,13 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Salt : MonoBehaviour
+public class Salt : Item, IPlaceable
 {
 
     public int charges = 3;
     public GameObject salt;
 
-    public void placeSalt(RaycastHit hit)
+    public void Place(RaycastHit hit)
     {
         if (charges > 0)
         {

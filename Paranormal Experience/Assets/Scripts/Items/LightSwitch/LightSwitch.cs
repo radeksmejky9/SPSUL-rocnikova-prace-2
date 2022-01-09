@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LightSwitch : MonoBehaviour
+public class LightSwitch : Item, ISwitchable
 {
-    bool IsOn = false;
+    bool IsOn = true;
 
     public GameObject[] lights;
     public AudioSource asource;
@@ -19,7 +19,7 @@ public class LightSwitch : MonoBehaviour
         {
             if (IsOn)
             {
-                lights[i].GetComponent<Light>().intensity = 1;
+                lights[i].GetComponent<Light>().intensity = 3;
             }
             else
             {

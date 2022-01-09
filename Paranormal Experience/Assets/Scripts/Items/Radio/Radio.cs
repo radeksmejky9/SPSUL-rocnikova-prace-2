@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Radio : MonoBehaviour
+public class Radio : Item, ISwitchable
 {
 
     public GameObject time;
@@ -28,14 +28,6 @@ public class Radio : MonoBehaviour
 
     }
 
-
-    public bool Is_Enabled
-    {
-        get
-        {
-            return is_enabled;
-        }
-    }
     public void Switch()
     {
         is_enabled = !is_enabled;
@@ -54,6 +46,15 @@ public class Radio : MonoBehaviour
             item.SetActive(is_enabled);
         }
     }
+
+    public bool Is_Enabled
+    {
+        get
+        {
+            return is_enabled;
+        }
+    }
+
 
 
 }

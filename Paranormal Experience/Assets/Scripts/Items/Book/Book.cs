@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Book : MonoBehaviour
+public class Book : Item, IPlaceable
 {
     public GameObject openedBook;
     public GameObject closedBook;
@@ -34,6 +34,15 @@ public class Book : MonoBehaviour
         }
     }
 
+    public void Place(RaycastHit hit)
+    {
+        transform.parent = null;
+        GetComponent<Rigidbody>().isKinematic = false;
+        GetComponent<Collider>().enabled = true;
+        GetComponent<Book>().OpenTheBook();
+        transform.position = hit.point;
+        transform.rotation = new Quaternion(0, 0, 0, 0);
+    }
 
     private void OnTriggerEnter(Collider other)
     {

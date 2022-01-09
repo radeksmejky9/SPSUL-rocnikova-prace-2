@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Thermometer : MonoBehaviour
+public class Thermometer : Item, ISwitchable
 {
     public GameObject text1;
     public GameObject text2;

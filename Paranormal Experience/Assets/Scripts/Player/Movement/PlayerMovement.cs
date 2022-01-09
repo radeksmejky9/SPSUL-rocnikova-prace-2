@@ -17,11 +17,7 @@ public class PlayerMovement : MonoBehaviour
     public float maxSpeed;
     public float counterMovement;
     public float threshold = 1;
-
-
-
     float x, y;
-    bool sprinting;
 
 
     void Awake()

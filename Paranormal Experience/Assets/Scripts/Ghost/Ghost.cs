@@ -31,13 +31,10 @@ public class Ghost : MonoBehaviour
         {
             int r = UnityEngine.Random.Range(0, b.Length);
             if (b[r])
-            {
                 i--;
-            }
             else
-            {
                 b[r] = true;
-            }
+
 
         }
 
