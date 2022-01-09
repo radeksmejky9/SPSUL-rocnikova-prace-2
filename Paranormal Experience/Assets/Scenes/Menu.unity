@@ -404,6 +404,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 24787773}
     m_Modifications:
+    - target: {fileID: 2047845619, guid: 1edb028daf524f84ab0685049befaefc, type: 3}
+      propertyPath: m_Size.y
+      value: 0.8691732
+      objectReference: {fileID: 0}
+    - target: {fileID: 2047845619, guid: 1edb028daf524f84ab0685049befaefc, type: 3}
+      propertyPath: m_Size.z
+      value: 1.7336684
+      objectReference: {fileID: 0}
+    - target: {fileID: 2047845619, guid: 1edb028daf524f84ab0685049befaefc, type: 3}
+      propertyPath: m_Center.y
+      value: 0.43629384
+      objectReference: {fileID: 0}
+    - target: {fileID: 2047845619, guid: 1edb028daf524f84ab0685049befaefc, type: 3}
+      propertyPath: m_Center.z
+      value: 3.0212066
+      objectReference: {fileID: 0}
     - target: {fileID: 1622695828375642682, guid: 1edb028daf524f84ab0685049befaefc, type: 3}
       propertyPath: m_Convex
       value: 0
@@ -736,8 +752,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.2590358, y: 0.86678207, z: 3.1348891}
-  m_Center: {x: 0.20873083, y: 0.4352204, z: 2.320596}
+  m_Size: {x: 1.2590358, y: 0.8054939, z: 1.3974053}
+  m_Center: {x: 0.20873083, y: 0.40472794, z: 1.4518684}
 --- !u!4 &439355752 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1929978716471456658, guid: 1edb028daf524f84ab0685049befaefc, type: 3}
@@ -1887,13 +1903,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1585566237}
-  m_LocalRotation: {x: 0.02556296, y: -0.69107985, z: 0.024471207, w: 0.72191155}
-  m_LocalPosition: {x: -26.510872, y: 25.687716, z: -77.54751}
+  m_LocalRotation: {x: 0.02467767, y: -0.70667607, z: 0.02467767, w: 0.70667607}
+  m_LocalPosition: {x: -26.510872, y: 25.687716, z: -76.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 4.056, y: -87.5, z: 0}
+  m_LocalEulerAnglesHint: {x: 4, y: -90, z: 0}
 --- !u!95 &1585566241
 Animator:
   serializedVersion: 3
