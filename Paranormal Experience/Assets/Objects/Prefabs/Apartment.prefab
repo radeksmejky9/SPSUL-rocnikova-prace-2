@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3645566183366968357}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: polySurface806
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39,7 +39,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2211296065687406566}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: SM_BathThubFaucet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -70,7 +70,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1340515835014811903}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: SM_Sofa
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101,7 +101,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 678555809115456224}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: polySurface533
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -132,7 +132,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2857138697062965740}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: SM_WallLiving_q5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -166,7 +166,7 @@ GameObject:
   - component: {fileID: 6542791468895285771}
   - component: {fileID: 4578237732931719372}
   - component: {fileID: 723480596126351048}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: SM_ChairLamp_surfaceShader17_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -259,7 +259,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1101717817947014518}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: SM_Rug
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -290,7 +290,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 391082656304955272}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: SM_bathMirror
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -321,7 +321,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5233793662930327589}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: polySurface508
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -352,7 +352,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4214144977734678007}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: SM_BathMiniwall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -383,7 +383,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5937583086670721785}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: SM_Walls_A1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -416,7 +416,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3305260377652256899}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: ceiling1:polySurface1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -447,7 +447,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 599163566997123706}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: SM_BarStools
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -481,7 +481,7 @@ GameObject:
   - component: {fileID: 1379593444977297115}
   - component: {fileID: 5338280996409235477}
   - component: {fileID: 1529102678913054698}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: SM_Rug_surfaceShader33_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -577,7 +577,7 @@ GameObject:
   - component: {fileID: 3138323007298158246}
   - component: {fileID: 8430402467309489616}
   - component: {fileID: 1565386510094846848}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: SM_SofaRUG1_surfaceShader34_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -673,7 +673,7 @@ GameObject:
   - component: {fileID: 2964488789249606335}
   - component: {fileID: 5057087277609743268}
   - component: {fileID: 1622695828375642682}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: SM_Door_Table_Vases_surfaceShader10_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -769,7 +769,7 @@ GameObject:
   - component: {fileID: 4756280326066010518}
   - component: {fileID: 1848314200464329586}
   - component: {fileID: 1715584336865581210}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: SM_PaintingsWindow_Rails_surfaceShader11_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -862,7 +862,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7620473759685827567}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: SM_PaintingsWindow_Rails
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -893,7 +893,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4195467004914408487}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: polySurface376
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -914,6 +914,101 @@ Transform:
   m_Father: {fileID: 3548022088095619753}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1909859129115805701
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4665714357814591161}
+  - component: {fileID: 1990228583721941260}
+  - component: {fileID: 1513220716048458134}
+  - component: {fileID: 2348313228859073591}
+  m_Layer: 0
+  m_Name: Cube
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4665714357814591161
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1909859129115805701}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.0729, y: -0.02721, z: 0.0112}
+  m_LocalScale: {x: 0.0001, y: 0.044, z: 0.021}
+  m_Children: []
+  m_Father: {fileID: 3548022088095619753}
+  m_RootOrder: 51
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &1990228583721941260
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1909859129115805701}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &1513220716048458134
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1909859129115805701}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 6294681864f1d564db8f64c8f0eb41b8, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &2348313228859073591
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1909859129115805701}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Size: {x: 1.000001, y: 1.0000004, z: 1.0000007}
+  m_Center: {x: 0.00000572205, y: -0.000007626737, z: 0.0000056246618}
 --- !u!1 &1928332921512398806
 GameObject:
   m_ObjectHideFlags: 0
@@ -925,7 +1020,7 @@ GameObject:
   - component: {fileID: 3833381906699344073}
   - component: {fileID: 2556144806748338034}
   - component: {fileID: 7907860000746460721}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: polySurface1136_surfaceShader24_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1007,7 +1102,7 @@ GameObject:
   - component: {fileID: 1929978715319748983}
   - component: {fileID: 1929978715319748980}
   - component: {fileID: 1929978715319748981}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: SM_Floor_surfaceShader1_0 (1)
   m_TagString: Floor
   m_Icon: {fileID: 0}
@@ -1101,7 +1196,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1929978715431405805}
   - component: {fileID: 1929978715431405804}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GameObject (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1145,7 +1240,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1929978715539449090}
   - component: {fileID: 1929978715539449093}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GameObject (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1468,7 +1563,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1929978715930342582}
   - component: {fileID: 1929978715930342537}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GameObject (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1606,7 +1701,7 @@ GameObject:
   - component: {fileID: 1929978716065199328}
   - component: {fileID: 1929978716065199330}
   - component: {fileID: 1929978716065199331}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: polySurface1136_surfaceShader24_0 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1779,7 +1874,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1929978716299978872}
   - component: {fileID: 1929978716299978875}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Reflection Probe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2357,7 +2452,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1929978716701106894}
   - component: {fileID: 1929978716701106881}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2401,7 +2496,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1929978716769312375}
   - component: {fileID: 1929978716769312374}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GameObject (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2445,7 +2540,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1929978716810662087}
   - component: {fileID: 1929978716810662086}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GameObject (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2489,7 +2584,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1929978716925290791}
   - component: {fileID: 1929978716925290790}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GameObject (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2533,7 +2628,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1929978716925654936}
   - component: {fileID: 1929978716925654939}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GameObject (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2762,7 +2857,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6225751617185258824}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: SM_Floor.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2795,7 +2890,7 @@ GameObject:
   - component: {fileID: 7890464147710266201}
   - component: {fileID: 5168431473335993634}
   - component: {fileID: 2057752653333091574}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_HallFrames_miniCounter_SkirtingBoard_surfaceShader23_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2888,7 +2983,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4469780509626232673}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: SM_Bath_BookTP1SwitchTPholder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2919,7 +3014,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8510158802319352354}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: SM_RoomCabs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2950,7 +3045,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7908195017516127619}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: SM_BathCounter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2981,7 +3076,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4563333582014427842}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: polySurface1114
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3105,7 +3200,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7068760649145850887}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: SM_Counter_Stove_BowlTowel_Frames
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3138,7 +3233,7 @@ GameObject:
   - component: {fileID: 5479550371486625847}
   - component: {fileID: 1674389221010387651}
   - component: {fileID: 6071953084450231887}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: SM_BathThubFaucet_surfaceShader39_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3217,7 +3312,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2051229574721685686}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: SM_HallFrames_miniCounter_SkirtingBoard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3248,7 +3343,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4042646544228120085}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: SM_WallLiving_Q2_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3279,7 +3374,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6882429979392633091}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: SM_Door_Table_Vases
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3310,7 +3405,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 790135310685427033}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: SM_BedsideLamps
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3340,7 +3435,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4221780449862736703}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: SM_ChairLamp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3374,7 +3469,7 @@ GameObject:
   - component: {fileID: 914000370427094185}
   - component: {fileID: 3479549455503128159}
   - component: {fileID: 2047845619}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: SM_Counter_Stove_BowlTowel_Frames_surfaceShader2_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3466,7 +3561,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3846424933654192804}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: SM_Room_WALL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3499,7 +3594,7 @@ GameObject:
   - component: {fileID: 1434336394581310443}
   - component: {fileID: 6752057300391793617}
   - component: {fileID: 1479282762077999475}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: SM_BathCeilingMIrrorCase_surfaceShader22_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3580,7 +3675,7 @@ GameObject:
   - component: {fileID: 3656995349383510251}
   - component: {fileID: 3985156411856579438}
   - component: {fileID: 8586581831520582592}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: SM_BathFaucet_surfaceShader42_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3659,7 +3754,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 386558114460500303}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: SM_BathCeilingMIrrorCase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3693,7 +3788,7 @@ GameObject:
   - component: {fileID: 6816568566183802574}
   - component: {fileID: 2018152794243833709}
   - component: {fileID: 3734695134122817778}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: SM_Sofa_surfaceShader9_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3786,7 +3881,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7999063174489521028}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: SM_Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3819,7 +3914,7 @@ GameObject:
   - component: {fileID: 2378486799849144240}
   - component: {fileID: 5107357098471824713}
   - component: {fileID: 3910022393109913902}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: SM_Blanket_surfaceShader12_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3912,7 +4007,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2826219653573001355}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: polySurface596
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3945,7 +4040,7 @@ GameObject:
   - component: {fileID: 3624749270454174498}
   - component: {fileID: 6463626002958740481}
   - component: {fileID: 9129253952480476077}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_KitchenBath_WALL_surfaceShader36_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4024,7 +4119,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2424214092978958942}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: SM_Bath_TP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4055,7 +4150,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5197865980997482601}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: group18
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4155,6 +4250,7 @@ Transform:
   - {fileID: 1929978715930342582}
   - {fileID: 1929978715319748978}
   - {fileID: 1929978716471456658}
+  - {fileID: 4665714357814591161}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -89.98, y: -180, z: 0}
@@ -4167,7 +4263,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6293633470969363172}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: SM_Blanket
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4201,7 +4297,7 @@ GameObject:
   - component: {fileID: 7843786021572615456}
   - component: {fileID: 6561908681246204669}
   - component: {fileID: 4560414177439907775}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: SM_BathCounter_surfaceShader7_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4294,7 +4390,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5300951413556721155}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: SM_SofaRUG1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4325,7 +4421,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4870676819678230414}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: polySurface1136
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4359,7 +4455,7 @@ GameObject:
   - component: {fileID: 2733132881618620115}
   - component: {fileID: 2185089232278237455}
   - component: {fileID: 6507295252756730956}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: SM_BarStools_surfaceShader3_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4438,7 +4534,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7844305724213409964}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: polySurface1063
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4469,7 +4565,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6418162178239714283}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: SM_KitchenBath_WALL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4500,7 +4596,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7484476128925298738}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: SM_KitchenFaucet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4531,7 +4627,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4048143997341486856}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: SM_BathFaucet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4564,7 +4660,7 @@ GameObject:
   - component: {fileID: 8766353196034769968}
   - component: {fileID: 5770410233160679160}
   - component: {fileID: 4562077178000994507}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: polySurface1114_Default_Material_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4643,7 +4739,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 898101674529443469}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: SM_BalconyRails_Paintings_Frames
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4677,7 +4773,7 @@ GameObject:
   - component: {fileID: 6353583531875367284}
   - component: {fileID: 1238712501254961063}
   - component: {fileID: 8911906809414902558}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: SM_Bath_TP_surfaceShader19_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4756,7 +4852,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8121390557893121894}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: polySurface593
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4790,7 +4886,7 @@ GameObject:
   - component: {fileID: 4570475616263215088}
   - component: {fileID: 3508465480958375567}
   - component: {fileID: 5957660587935095290}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: SM_WallLiving_Q3_4_surfaceShader28_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4885,7 +4981,7 @@ GameObject:
   - component: {fileID: 881773201872149840}
   - component: {fileID: 6814726716788600105}
   - component: {fileID: 7361858079922092391}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: SM_Bath_BookTP1SwitchTPholder_surfaceShader20_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4967,7 +5063,7 @@ GameObject:
   - component: {fileID: 6200352743403006686}
   - component: {fileID: 8202229271218774697}
   - component: {fileID: 5986576351812998878}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_wallKitchen_q1_surfaceShader21_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5009,7 +5105,7 @@ MeshRenderer:
   m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
-  m_ReflectionProbeUsage: 1
+  m_ReflectionProbeUsage: 0
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
@@ -5060,7 +5156,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7202567932950812}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: SM_wallKitchen_q1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5091,7 +5187,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 614732235695494569}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Floor_GEO
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5125,7 +5221,7 @@ GameObject:
   - component: {fileID: 8075093242687890221}
   - component: {fileID: 6211874772456500033}
   - component: {fileID: 6211874772456500032}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: SM_Tv_Rack_cTable_Bowl1_surfaceShader27_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5324,7 +5420,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4791079332057043060}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: SM_WallLiving_Q3_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5358,7 +5454,7 @@ GameObject:
   - component: {fileID: 3238548711641428663}
   - component: {fileID: 680861603060914369}
   - component: {fileID: 6561978699540831776}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: SM_RoomCabs_surfaceShader16_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5454,7 +5550,7 @@ GameObject:
   - component: {fileID: 6500365526069360489}
   - component: {fileID: 1532073620350477305}
   - component: {fileID: 6577871355895715319}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: SM_WallLiving_q5_SM_WallLiving_q3:VRayMtl37SG1_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5550,7 +5646,7 @@ GameObject:
   - component: {fileID: 881654390159020029}
   - component: {fileID: 3144580174888764202}
   - component: {fileID: 6685159923431402602}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: SM_Room_WALL_surfaceShader37_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5643,7 +5739,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1296761996242538544}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: polySurface496
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5674,7 +5770,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4875096543271959339}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: SM_KitchenPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5707,7 +5803,7 @@ GameObject:
   - component: {fileID: 8019712788142844984}
   - component: {fileID: 2772030110685918314}
   - component: {fileID: 4438905546185722024}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: SM_WallLiving_Q2_3_surfaceShader25_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5788,7 +5884,7 @@ GameObject:
   - component: {fileID: 2177182275849889628}
   - component: {fileID: 4136009424175243133}
   - component: {fileID: 3520655032677182110}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: polySurface1115_Default_Material_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5867,7 +5963,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8918331330001726041}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: SM_BedFrame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5898,7 +5994,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4289567256662149824}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: SM_Doors
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5929,7 +6025,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9041069432134194594}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: SM_ToiletTub
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5960,7 +6056,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3712441456371502318}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: SM_PillowCushion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5991,7 +6087,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5713944017099230090}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: polySurface803
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6022,7 +6118,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 32369055677713430}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: polySurface598
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6056,7 +6152,7 @@ GameObject:
   - component: {fileID: 8338417373834544610}
   - component: {fileID: 1327044229314897347}
   - component: {fileID: 7313532309406508526}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: SM_BedFrame_surfaceShader13_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6151,7 +6247,7 @@ GameObject:
   - component: {fileID: 619980937595334691}
   - component: {fileID: 7904054410551433467}
   - component: {fileID: 3098888781104875835}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: SM_bathMirror_surfaceShader38_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6231,7 +6327,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7018806463885728658}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: SM_Tv_Rack_cTable_Bowl1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6265,7 +6361,7 @@ GameObject:
   - component: {fileID: 4512731443920001374}
   - component: {fileID: 2808832542158780996}
   - component: {fileID: 7697127350113541041}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: SM_BathMiniwall_surfaceShader8_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6358,7 +6454,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2106161456348231514}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Bed
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6389,7 +6485,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 886348646060362775}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: SM_SwitchesAndSocket
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6420,7 +6516,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8848232924853070271}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: SM_BG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6452,7 +6548,7 @@ GameObject:
   - component: {fileID: 9047394056036174830}
   - component: {fileID: 8315947777425509614}
   - component: {fileID: 4591216430366247309}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: SM_PillowCushion_surfaceShader14_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6533,7 +6629,7 @@ GameObject:
   - component: {fileID: 667608483715923157}
   - component: {fileID: 7032552338307409097}
   - component: {fileID: 7303101407958663766}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: SM_KitchenFaucet_surfaceShader40_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6616,7 +6712,7 @@ GameObject:
   - component: {fileID: 4815860476217191713}
   - component: {fileID: 8291113845519921262}
   - component: {fileID: 8291113845519921249}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_ToiletTub_surfaceShader6_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6725,7 +6821,7 @@ GameObject:
   - component: {fileID: 7050328426150649272}
   - component: {fileID: 1986405200921641675}
   - component: {fileID: 8357029756081294029}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: SM_Doors_surfaceShader18_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6818,7 +6914,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8441817766205613746}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: polySurface1115
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6948,7 +7044,7 @@ GameObject:
   - component: {fileID: 9006713498066750035}
   - component: {fileID: 6879627204810263582}
   - component: {fileID: 8863333842090597002}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: ceiling1:polySurface1_surfaceShader35_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7044,7 +7140,7 @@ GameObject:
   - component: {fileID: 6552393221880121864}
   - component: {fileID: 8772004099083848798}
   - component: {fileID: 8875636753248635471}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_KitchenPanel_surfaceShader4_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7137,7 +7233,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5490286744862279418}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: polySurface559
   m_TagString: Untagged
   m_Icon: {fileID: 0}

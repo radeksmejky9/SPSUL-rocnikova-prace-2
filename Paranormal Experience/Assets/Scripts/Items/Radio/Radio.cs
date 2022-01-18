@@ -55,6 +55,11 @@ public class Radio : Item, ISwitchable
         }
     }
 
-
+    public void OnTriggerEnter(Collider other)
+    {
+        if (!is_enabled && other.tag == "Enemy") {
+            this.Switch();
+        }
+    }
 
 }
