@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Radio : Item, ISwitchable
+public class Radio : Item, ISwitchable, ITriggerable
 {
 
     public GameObject time;
@@ -54,8 +54,12 @@ public class Radio : Item, ISwitchable
             return is_enabled;
         }
     }
+    private void OnTriggerEnter(Collider other)
+    {
+        Trigger(other);
+    }
 
-    public void OnTriggerEnter(Collider other)
+    public void Trigger(Collider other)
     {
         if (!is_enabled && other.tag == "Enemy") {
             this.Switch();

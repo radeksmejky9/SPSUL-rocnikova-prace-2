@@ -10,6 +10,7 @@ TagManager:
   - Enemy
   - Floor
   - Spot
+  - Throwable
   layers:
   - Default
   - TransparentFX

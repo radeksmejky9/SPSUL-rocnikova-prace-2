@@ -6,7 +6,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Video;
 
-public class TVRemote : Item, ISwitchable
+public class TVRemote : Item, ISwitchable, ITriggerable
 {
 
     public GameObject tv;
@@ -34,7 +34,21 @@ public class TVRemote : Item, ISwitchable
             tv.GetComponent<VideoPlayer>().Pause();
             tv.GetComponent<MeshRenderer>().enabled = false;
         }
+    }
 
+
+
+    private void OnTriggerEnter(Collider other)
+    {
+        Trigger(other);
+    }
+
+    public void Trigger(Collider other)
+    {
+        if (!is_enabled && other.tag == "Enemy")
+        {
+            this.Switch();
+        }
     }
 
 
