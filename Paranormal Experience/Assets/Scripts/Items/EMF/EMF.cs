@@ -5,21 +5,24 @@ using UnityEngine;
 public class EMF : Item, ISwitchable
 {
     bool is_enabled;
+    public int emfradius;
+    private LayerMask lm;
     public Material importedMat;
     private Material mat;
     public GameObject model;
     public Texture[] t;
     public AudioSource audio;
     private bool rdy = false;
+    private Dictionary<Ghost.Evidence, bool> evidences;
 
     public void Start()
     {
         mat = new Material(importedMat.shader);
         mat.CopyPropertiesFromMaterial(importedMat);
         model.GetComponent<Renderer>().material = mat;
+        evidences = GameObject.FindGameObjectWithTag("Enemy").GetComponent<Ghost>().activeEvidences;
+        lm = 1 << 19;
     }
-
-
     public bool Is_Enabled
     {
         get
@@ -30,18 +33,21 @@ public class EMF : Item, ISwitchable
     private void Update()
     {
         if (rdy && is_enabled)
+        {
             StartCoroutine(changeEMF());
+        }
         else if (!is_enabled)
             audio.Stop();
-
     }
 
     IEnumerator changeEMF()
     {
         rdy = false;
-        if (GameObject.FindGameObjectWithTag("Enemy").GetComponent<Ghost>().activeEvidences.TryGetValue(Ghost.Evidence.EMF, out bool emf))
+        if (evidences.TryGetValue(Ghost.Evidence.EMF, out bool emf))
         {
-            if (emf)
+            var b = Physics.CheckSphere(this.transform.position, emfradius, lm);
+
+            if (emf && b)
             {
                 var i = Random.Range(0, 5);
                 mat.SetTexture("_EmissionMap", t[i]);
