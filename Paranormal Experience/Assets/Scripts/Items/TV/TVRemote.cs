@@ -11,7 +11,7 @@ public class TVRemote : Item, ISwitchable, ITriggerable
 
     public GameObject tv;
 
-    bool is_enabled;
+    public bool is_enabled;
 
 
     public bool Is_Enabled

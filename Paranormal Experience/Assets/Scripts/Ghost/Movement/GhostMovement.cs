@@ -8,7 +8,8 @@ public class GhostMovement : MonoBehaviour
     public float wanderRadius;
     public float wanderTimer;
     public GameObject[] footprints;
-    public AudioSource audio;
+    public float InteractionSoundCooldown;
+    private AudioSource[] clips;
     bool fp;
     private Transform target;
     public NavMeshAgent agent;
@@ -21,11 +22,13 @@ public class GhostMovement : MonoBehaviour
         {
             fp = footprints;
         }
+        clips = this.gameObject.GetComponents<AudioSource>();
     }
 
     void Update()
     {
         timer += Time.deltaTime;
+        InteractionSoundCooldown += Time.deltaTime;
 
         if (timer >= wanderTimer)
         {
@@ -33,6 +36,8 @@ public class GhostMovement : MonoBehaviour
             agent.SetDestination(newPos);
             timer = 0;
         }
+
+
     }
 
     public static Vector3 RandomNavSphere(Vector3 origin, float dist, int layermask)
@@ -54,7 +59,7 @@ public class GhostMovement : MonoBehaviour
         if (fp)
         {
             a = 0;
-            audio.Play();
+            clips[0].Play();
             StartCoroutine("LeaveFootprint");
         }
     }
@@ -72,6 +77,17 @@ public class GhostMovement : MonoBehaviour
         {
             StartCoroutine("LeaveFootprint");
         }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Player" && InteractionSoundCooldown >= 60)
+        {
+            InteractionSoundCooldown = 0;
+            clips[1].Play();
+        }
+
+
     }
 
 }

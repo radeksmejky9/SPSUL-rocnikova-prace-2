@@ -52,6 +52,22 @@ public class PickUpController : MonoBehaviour
             slotFull = false;
         }
 
+        if (Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            if (Physics.Raycast(cam.transform.position, cam.transform.forward, out hit, 5))
+            {
+                if (hit.transform.tag == "LightSwitch")
+                {
+                    hit.transform.gameObject.GetComponent<LightSwitch>().Switch();
+                }
+                if (hit.transform.tag == "ToiletFlush")
+                {
+                    hit.transform.gameObject.GetComponent<FlushToilet>().Switch();
+                }
+            }
+        }
+
+
         if (slotFull && Input.GetKeyDown(KeyCode.Mouse1))
         {
             if (equippedItem.layer == 8 || equippedItem.layer == 13)

@@ -17,6 +17,10 @@ public class PlayerMovement : MonoBehaviour
     public float maxSpeed;
     public float counterMovement;
     public float threshold = 1;
+    public bool eastereggdone = false;
+    public bool easteregg = false;
+    public Rigidbody eastereggrb;
+    public Rigidbody eastereggrb2;
     float x, y;
 
 
@@ -35,15 +39,70 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        Movement();
+        if (!easteregg)
+            Movement();
+        else
+            Easteregg();
     }
 
     private void Update()
     {
-        MyInput();
-        Look();
+        if (easteregg)
+            eastereggdone = true;
+        if (!easteregg)
+        {
+            MyInput();
+            Look();
+        }
     }
 
+    private void Easteregg()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            easteregg = false;
+        }
+        if (Input.GetKey(KeyCode.W))
+        {
+            eastereggrb.AddForce(eastereggrb.transform.forward * 25);
+        }
+        if (Input.GetKey(KeyCode.A))
+        {
+            Vector3 a = eastereggrb.transform.eulerAngles;
+            eastereggrb.transform.eulerAngles = new Vector3(a.x, a.y - 1, a.z);
+        }
+        if (Input.GetKey(KeyCode.S))
+        {
+            eastereggrb.AddForce(-eastereggrb.transform.forward * 25);
+        }
+        if (Input.GetKey(KeyCode.D))
+        {
+            Vector3 a = eastereggrb.transform.eulerAngles;
+            eastereggrb.transform.eulerAngles = new Vector3(a.x, a.y + 1, a.z);
+        }
+        if (Input.GetKey(KeyCode.UpArrow))
+        {
+            eastereggrb2.AddForce(eastereggrb2.transform.forward * 25);
+        }
+        if (Input.GetKey(KeyCode.LeftArrow))
+        {
+            Vector3 a = eastereggrb2.transform.eulerAngles;
+            eastereggrb2.transform.eulerAngles = new Vector3(a.x, a.y - 1, a.z);
+        }
+        if (Input.GetKey(KeyCode.DownArrow))
+        {
+            eastereggrb2.AddForce(-eastereggrb2.transform.forward * 25);
+        }
+        if (Input.GetKey(KeyCode.RightArrow))
+        {
+            Vector3 a = eastereggrb2.transform.eulerAngles;
+            eastereggrb2.transform.eulerAngles = new Vector3(a.x, a.y + 1, a.z);
+        }
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            easteregg = false;
+        }
+    }
 
     private void MyInput()
     {

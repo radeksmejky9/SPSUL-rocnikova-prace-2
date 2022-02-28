@@ -11,6 +11,7 @@ TagManager:
   - Floor
   - Spot
   - Throwable
+  - ToiletFlush
   layers:
   - Default
   - TransparentFX

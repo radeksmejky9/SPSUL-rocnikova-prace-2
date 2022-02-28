@@ -9,8 +9,7 @@ public class LightSwitchController : MonoBehaviour
 
     private void Update()
     {
-        Debug.DrawRay(cam.transform.position, cam.transform.forward, Color.yellow);
-        if (Input.GetKeyDown(KeyCode.Mouse0))
+        /*if (Input.GetKeyDown(KeyCode.Mouse0))
         {
             if (Physics.Raycast(cam.transform.position, cam.transform.forward, out hit, 5))
             {
@@ -19,6 +18,6 @@ public class LightSwitchController : MonoBehaviour
                     hit.transform.gameObject.GetComponent<LightSwitch>().Switch();
                 }
             }
-        }
+        }*/
     }
 }
