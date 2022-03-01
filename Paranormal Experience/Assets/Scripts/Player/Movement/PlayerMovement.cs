@@ -1,6 +1,7 @@
 ﻿
 using System;
 using UnityEngine;
+using TMPro;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -28,6 +29,7 @@ public class PlayerMovement : MonoBehaviour
     public Transform shootingPoint2;
     private float shootCooldownTank2;
     private float shootCooldown = 1;
+    public TMP_Text text;
     float x, y;
 
 
@@ -65,78 +67,98 @@ public class PlayerMovement : MonoBehaviour
 
     private void Easteregg()
     {
-        shootCooldownTank1 += Time.deltaTime;
-        shootCooldownTank2 += Time.deltaTime;
-
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (shootingPoint1 == null && shootingPoint2 == null)
         {
-            easteregg = false;
+            text.text = "Draw!";
         }
-        if (Input.GetKey(KeyCode.W))
+        if (shootingPoint1 == null)
         {
-            eastereggrb.AddForce(eastereggrb.transform.forward * 25);
+            text.text = "Russia \n \n Won!";
         }
-        if (Input.GetKey(KeyCode.A))
+        if (shootingPoint2 == null)
         {
-            Vector3 a = eastereggrb.transform.eulerAngles;
-            eastereggrb.transform.eulerAngles = new Vector3(a.x, a.y - 1, a.z);
+            text.text = "Ukraine \n \n Won!";
         }
-        if (Input.GetKey(KeyCode.S))
+        if (shootingPoint1 != null || shootingPoint2 != null)
         {
-            eastereggrb.AddForce(-eastereggrb.transform.forward * 25);
-        }
-        if (Input.GetKey(KeyCode.D))
-        {
-            Vector3 a = eastereggrb.transform.eulerAngles;
-            eastereggrb.transform.eulerAngles = new Vector3(a.x, a.y + 1, a.z);
-        }
 
 
-        if (Input.GetKey(KeyCode.LeftControl))
-        {
-            if (shootCooldownTank1 > shootCooldown)
+            shootCooldownTank1 += Time.deltaTime;
+            shootCooldownTank2 += Time.deltaTime;
+
+            if (Input.GetKeyDown(KeyCode.Escape))
             {
-                GameObject proj = Instantiate(projectileTank1, shootingPoint1.transform);
-                proj.GetComponent<Rigidbody>().AddForce(eastereggrb2.transform.forward);
+                easteregg = false;
+            }
+            if (Input.GetKey(KeyCode.W))
+            {
+                eastereggrb.AddForce(eastereggrb.transform.forward * 25);
+            }
+            if (Input.GetKey(KeyCode.A))
+            {
+                Vector3 a = eastereggrb.transform.eulerAngles;
+                eastereggrb.transform.eulerAngles = new Vector3(a.x, a.y - 1, a.z);
+            }
+            if (Input.GetKey(KeyCode.S))
+            {
+                eastereggrb.AddForce(-eastereggrb.transform.forward * 25);
+            }
+            if (Input.GetKey(KeyCode.D))
+            {
+                Vector3 a = eastereggrb.transform.eulerAngles;
+                eastereggrb.transform.eulerAngles = new Vector3(a.x, a.y + 1, a.z);
             }
 
-        }
 
-
-
-
-        if (Input.GetKey(KeyCode.UpArrow))
-        {
-            eastereggrb2.AddForce(eastereggrb2.transform.forward * 25);
-        }
-        if (Input.GetKey(KeyCode.LeftArrow))
-        {
-            Vector3 a = eastereggrb2.transform.eulerAngles;
-            eastereggrb2.transform.eulerAngles = new Vector3(a.x, a.y - 1, a.z);
-        }
-        if (Input.GetKey(KeyCode.DownArrow))
-        {
-            eastereggrb2.AddForce(-eastereggrb2.transform.forward * 25);
-        }
-        if (Input.GetKey(KeyCode.RightArrow))
-        {
-            Vector3 a = eastereggrb2.transform.eulerAngles;
-            eastereggrb2.transform.eulerAngles = new Vector3(a.x, a.y + 1, a.z);
-        }
-        if (Input.GetKey(KeyCode.RightControl))
-        {
-            if (shootCooldownTank2 > shootCooldown)
+            if (Input.GetKey(KeyCode.LeftControl))
             {
-                GameObject proj = Instantiate(projectileTank2, shootingPoint2.transform);
-                proj.GetComponent<Rigidbody>().AddForce(eastereggrb2.transform.forward);
+                if (shootCooldownTank1 > shootCooldown)
+                {
+                    shootCooldownTank1 = 0;
+                    GameObject proj = Instantiate(projectileTank1, shootingPoint1.transform);
+                    proj.GetComponent<Rigidbody>().AddForce(eastereggrb.transform.forward * 20);
+                }
+
             }
-        }
 
 
 
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            easteregg = false;
+
+            if (Input.GetKey(KeyCode.UpArrow))
+            {
+                eastereggrb2.AddForce(eastereggrb2.transform.forward * 25);
+            }
+            if (Input.GetKey(KeyCode.LeftArrow))
+            {
+                Vector3 a = eastereggrb2.transform.eulerAngles;
+                eastereggrb2.transform.eulerAngles = new Vector3(a.x, a.y - 1, a.z);
+            }
+            if (Input.GetKey(KeyCode.DownArrow))
+            {
+                eastereggrb2.AddForce(-eastereggrb2.transform.forward * 25);
+            }
+            if (Input.GetKey(KeyCode.RightArrow))
+            {
+                Vector3 a = eastereggrb2.transform.eulerAngles;
+                eastereggrb2.transform.eulerAngles = new Vector3(a.x, a.y + 1, a.z);
+            }
+            if (Input.GetKey(KeyCode.RightControl))
+            {
+                if (shootCooldownTank2 > shootCooldown)
+                {
+                    shootCooldownTank2 = 0;
+                    GameObject proj = Instantiate(projectileTank2, shootingPoint2.transform);
+                    proj.GetComponent<Rigidbody>().AddForce(eastereggrb2.transform.forward * 20);
+                }
+            }
+
+
+
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                text.text = "Draw!";
+                easteregg = false;
+            }
         }
     }
 

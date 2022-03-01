@@ -478,3 +478,13 @@ C# parse time         : 1833ms
 candidates check time : 104ms
 console write time    : 2ms
 
+[api-updater (non-obsolete-error-filter)] 3/1/2022 11:56:57 AM : Starting C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 182.5263ms
+moved types parse time: 154ms
+candidates parse time : 3ms
+C# parse time         : 579ms
+candidates check time : 93ms
+console write time    : 1ms
+
