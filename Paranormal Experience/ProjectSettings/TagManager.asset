@@ -12,6 +12,9 @@ TagManager:
   - Spot
   - Throwable
   - ToiletFlush
+  - Tank1
+  - Tank
+  - Wall
   layers:
   - Default
   - TransparentFX

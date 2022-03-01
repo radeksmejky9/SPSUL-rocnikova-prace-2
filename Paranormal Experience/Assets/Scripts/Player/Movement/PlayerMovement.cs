@@ -9,6 +9,8 @@ public class PlayerMovement : MonoBehaviour
     public Transform playerCam;
     public Transform orientation;
     public Transform equipPosition;
+    public GameObject projectileTank2;
+    public GameObject projectileTank1;
     private Rigidbody rb;
     private float xRotation;
     private float sensitivity = 50f;
@@ -20,7 +22,12 @@ public class PlayerMovement : MonoBehaviour
     public bool eastereggdone = false;
     public bool easteregg = false;
     public Rigidbody eastereggrb;
+    public Transform shootingPoint1;
+    private float shootCooldownTank1;
     public Rigidbody eastereggrb2;
+    public Transform shootingPoint2;
+    private float shootCooldownTank2;
+    private float shootCooldown = 1;
     float x, y;
 
 
@@ -58,6 +65,9 @@ public class PlayerMovement : MonoBehaviour
 
     private void Easteregg()
     {
+        shootCooldownTank1 += Time.deltaTime;
+        shootCooldownTank2 += Time.deltaTime;
+
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             easteregg = false;
@@ -80,6 +90,21 @@ public class PlayerMovement : MonoBehaviour
             Vector3 a = eastereggrb.transform.eulerAngles;
             eastereggrb.transform.eulerAngles = new Vector3(a.x, a.y + 1, a.z);
         }
+
+
+        if (Input.GetKey(KeyCode.LeftControl))
+        {
+            if (shootCooldownTank1 > shootCooldown)
+            {
+                GameObject proj = Instantiate(projectileTank1, shootingPoint1.transform);
+                proj.GetComponent<Rigidbody>().AddForce(eastereggrb2.transform.forward);
+            }
+
+        }
+
+
+
+
         if (Input.GetKey(KeyCode.UpArrow))
         {
             eastereggrb2.AddForce(eastereggrb2.transform.forward * 25);
@@ -98,6 +123,17 @@ public class PlayerMovement : MonoBehaviour
             Vector3 a = eastereggrb2.transform.eulerAngles;
             eastereggrb2.transform.eulerAngles = new Vector3(a.x, a.y + 1, a.z);
         }
+        if (Input.GetKey(KeyCode.RightControl))
+        {
+            if (shootCooldownTank2 > shootCooldown)
+            {
+                GameObject proj = Instantiate(projectileTank2, shootingPoint2.transform);
+                proj.GetComponent<Rigidbody>().AddForce(eastereggrb2.transform.forward);
+            }
+        }
+
+
+
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             easteregg = false;
