@@ -70,16 +70,21 @@ public class PlayerMovement : MonoBehaviour
         if (shootingPoint1 == null && shootingPoint2 == null)
         {
             text.text = "Draw!";
+            easteregg = false;
+
         }
         if (shootingPoint1 == null)
         {
             text.text = "Russia \n \n Won!";
+            easteregg = false;
+
         }
         if (shootingPoint2 == null)
         {
             text.text = "Ukraine \n \n Won!";
+            easteregg = false;
         }
-        if (shootingPoint1 != null || shootingPoint2 != null)
+        if (shootingPoint1 != null && shootingPoint2 != null)
         {
 
 
