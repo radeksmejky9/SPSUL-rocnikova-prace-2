@@ -5,8 +5,7 @@ using TMPro;
 
 public class PlayerMovement : MonoBehaviour
 {
-
-
+    public GameObject menu;
     public Transform playerCam;
     public Transform orientation;
     public Transform equipPosition;
@@ -20,6 +19,7 @@ public class PlayerMovement : MonoBehaviour
     public float maxSpeed;
     public float counterMovement;
     public float threshold = 1;
+    private bool menuEnabled = false;
     public bool eastereggdone = false;
     public bool easteregg = false;
     public Rigidbody eastereggrb;
@@ -60,8 +60,19 @@ public class PlayerMovement : MonoBehaviour
             eastereggdone = true;
         if (!easteregg)
         {
-            MyInput();
-            Look();
+            if (Input.GetKeyDown(KeyCode.J))
+            {
+                menuEnabled = !menuEnabled;
+                menu.SetActive(menuEnabled);
+                Cursor.lockState = menuEnabled ? CursorLockMode.None : CursorLockMode.Locked;
+                Cursor.visible = menuEnabled ? true : false; ;
+            }
+            if (!menuEnabled)
+            {
+                MyInput();
+                Look();
+            }
+
         }
     }
 

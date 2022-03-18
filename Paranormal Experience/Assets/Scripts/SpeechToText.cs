@@ -12,8 +12,9 @@ public class SpeechToText : MonoBehaviour
     KeywordRecognizer kr;
     Dictionary<string, Action> keywords;
     public GameObject tv;
-
-
+    public Camera playerCam;
+    public GameObject gamePlane;
+    public GameObject backgroundPlane;
 
 
 
@@ -51,8 +52,15 @@ public class SpeechToText : MonoBehaviour
     }
     private void LetsPlayGame()
     {
-        if (tv.GetComponent<TVRemote>().is_enabled && !gameObject.GetComponent<PlayerMovement>().eastereggdone)
+        Debug.Log("Game");
+        RaycastHit hit;
+        Physics.Raycast(playerCam.transform.position, playerCam.transform.forward, out hit, 10);
+        if (tv.GetComponent<TVRemote>().is_enabled && !gameObject.GetComponent<PlayerMovement>().eastereggdone && hit.collider.tag == "EasterEgg" && gameObject.GetComponent<PickUpController>().equipPosition.childCount == 0)
         {
+
+            Debug.Log("GameActive");
+            backgroundPlane.SetActive(false);
+            gamePlane.SetActive(true);
             gameObject.GetComponent<PlayerMovement>().easteregg = true;
             gameObject.GetComponent<PlayerMovement>().eastereggdone = true;
         }
@@ -69,6 +77,5 @@ public class SpeechToText : MonoBehaviour
             keywordAction.Invoke();
         }
     }
-
 
 }

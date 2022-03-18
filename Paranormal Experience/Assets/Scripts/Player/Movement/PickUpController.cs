@@ -85,7 +85,7 @@ public class PickUpController : MonoBehaviour
 
         }
 
-        if (slotFull && Input.GetKeyDown(KeyCode.F) && Physics.Raycast(cam.transform.position, cam.transform.forward, out hit, pickUpRange))
+        if (slotFull && Input.GetKeyDown(KeyCode.F) && Physics.Raycast(cam.transform.position, cam.transform.forward, out hit, pickUpRange, 1 << 6))
         {
             if (equippedItem.layer == 12)
             {

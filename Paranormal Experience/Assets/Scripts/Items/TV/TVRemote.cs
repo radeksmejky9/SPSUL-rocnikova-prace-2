@@ -10,7 +10,7 @@ public class TVRemote : Item, ISwitchable, ITriggerable
 {
 
     public GameObject tv;
-
+    public GameObject eastereggPlane;
     public bool is_enabled;
 
 
@@ -31,6 +31,8 @@ public class TVRemote : Item, ISwitchable, ITriggerable
         }
         else
         {
+            eastereggPlane.SetActive(false);
+            tv.SetActive(true);
             tv.GetComponent<VideoPlayer>().Pause();
             tv.GetComponent<MeshRenderer>().enabled = false;
         }

@@ -15,6 +15,7 @@ TagManager:
   - Tank1
   - Tank
   - Wall
+  - EasterEgg
   layers:
   - Default
   - TransparentFX
