@@ -112,6 +112,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ede8be656d8aeb44c853d5dfe3bfeb4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tag: Tank1
 --- !u!135 &7145631271161290754
 SphereCollider:
   m_ObjectHideFlags: 0

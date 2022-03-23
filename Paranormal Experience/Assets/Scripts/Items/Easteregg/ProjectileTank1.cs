@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class ProjectileTank1 : MonoBehaviour
 {
+    public string tag;
 
     private void OnCollisionEnter(Collision other)
     {
-        if (other.transform.tag == "Tank1")
+        if (other.transform.tag == tag)
             Destroy(other.gameObject);
         if (other.transform.tag == "Wall")
             Destroy(this.gameObject);

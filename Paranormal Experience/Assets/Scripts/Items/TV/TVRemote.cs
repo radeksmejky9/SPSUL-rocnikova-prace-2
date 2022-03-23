@@ -36,6 +36,7 @@ public class TVRemote : Item, ISwitchable, ITriggerable
             tv.GetComponent<VideoPlayer>().Pause();
             tv.GetComponent<MeshRenderer>().enabled = false;
         }
+        tv.GetComponent<MeshRenderer>().material.EnableKeyword("_EMISSION");
     }
 
 

@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 3515290094363064939}
   - component: {fileID: 4703183672964068055}
   - component: {fileID: 8410567205220405203}
-  - component: {fileID: -5266868880245479805}
   - component: {fileID: -6425437601513980882}
+  - component: {fileID: 4240273136682256994}
   m_Layer: 0
   m_Name: ProjectileTank2
   m_TagString: Untagged
@@ -100,18 +100,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 0
---- !u!114 &-5266868880245479805
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4914425380840351171}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6f91cbeae4bdc44c944cf287a352c68, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!135 &-6425437601513980882
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -125,3 +113,16 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4240273136682256994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4914425380840351171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ede8be656d8aeb44c853d5dfe3bfeb4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tag: Tank2
