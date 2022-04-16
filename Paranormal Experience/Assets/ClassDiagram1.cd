@@ -1,35 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="FootprintTrigger" Collapsed="true">
-    <Position X="30.5" Y="3" Width="1.5" />
+    <Position X="5.5" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAQAAAAAAAAAA=</HashCode>
       <FileName>Assets\Scripts\Ghost\Footprint\FootprintTrigger.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Ghost" Collapsed="true">
-    <Position X="32.25" Y="3" Width="1.5" />
+    <Position X="7.25" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
       <FileName>Assets\Scripts\Ghost\Ghost.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="GhostMovement" Collapsed="true">
-    <Position X="34" Y="3" Width="1.5" />
+    <Position X="7.25" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAQCAAAAECAAAQAAICAAAAAAAAACAIAgQBQAAAAEAAA=</HashCode>
       <FileName>Assets\Scripts\Ghost\Movement\GhostMovement.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="GhostOrb" Collapsed="true">
-    <Position X="28.75" Y="4" Width="1.5" />
+    <Position X="3.75" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Scripts\GhostOrb.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Book" Collapsed="true">
-    <Position X="20.5" Y="5" Width="1.5" />
+    <Position X="11" Y="6.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAgAAABgCAAAAACACAAAAABARAAAAAAQkBAAAAAAAA=</HashCode>
       <FileName>Assets\Scripts\Items\Book\Book.cs</FileName>
@@ -37,7 +37,15 @@
     <Lollipop Orientation="Bottom" Position="0.241" />
   </Class>
   <Class Name="EMF" Collapsed="true">
-    <Position X="14.5" Y="5" Width="1.5" />
+    <Position X="10" Y="5" Width="1.5" />
+    <InheritanceLine Type="Item" ManuallyRouted="true">
+      <Path>
+        <Point X="14.75" Y="2.691" />
+        <Point X="14.75" Y="3.054" />
+        <Point X="10.75" Y="3.054" />
+        <Point X="10.75" Y="5" />
+      </Path>
+    </InheritanceLine>
     <TypeIdentifier>
       <HashCode>AAQAEAAAACIAgIACAAABAAABAABAIAAAAAQAAAAIABA=</HashCode>
       <FileName>Assets\Scripts\Items\EMF\EMF.cs</FileName>
@@ -45,14 +53,22 @@
     <Lollipop Orientation="Bottom" Position="0.2" />
   </Class>
   <Class Name="RevealInLight" Collapsed="true">
-    <Position X="30.5" Y="5" Width="1.5" />
+    <Position X="5.5" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAQAAAAAADBAAAACAAAAAQAAAAAAAAAAQBAgAAAAAAA=</HashCode>
       <FileName>Assets\Scripts\Items\Footprint\RevealInLight.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Salt" Collapsed="true">
-    <Position X="21.5" Y="3.75" Width="1.5" />
+    <Position X="16" Y="5" Width="1.5" />
+    <InheritanceLine Type="Item" ManuallyRouted="true">
+      <Path>
+        <Point X="14.75" Y="2.691" />
+        <Point X="14.75" Y="3.094" />
+        <Point X="16.75" Y="3.094" />
+        <Point X="16.75" Y="5" />
+      </Path>
+    </InheritanceLine>
     <TypeIdentifier>
       <HashCode>gAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAA=</HashCode>
       <FileName>Assets\Scripts\Items\Footprint\Salt.cs</FileName>
@@ -60,14 +76,14 @@
     <Lollipop Orientation="Bottom" Position="0.2" />
   </Class>
   <Class Name="Item" Collapsed="true">
-    <Position X="18" Y="2" Width="1.5" />
+    <Position X="14" Y="2" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Scripts\Items\Item.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="LightSwitch" Collapsed="true">
-    <Position X="16.5" Y="5" Width="1.5" />
+    <Position X="13" Y="6.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAABAAAAAJAAAAAAAAAAAAIAIAAAQAAAAAAAAAA=</HashCode>
       <FileName>Assets\Scripts\Items\LightSwitch\LightSwitch.cs</FileName>
@@ -75,14 +91,14 @@
     <Lollipop Orientation="Bottom" Position="0.2" />
   </Class>
   <Class Name="LightSwitchController" Collapsed="true">
-    <Position X="30.5" Y="4" Width="1.5" />
+    <Position X="6.5" Y="5.5" Width="2.25" />
     <TypeIdentifier>
       <HashCode>AAQABAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Scripts\Items\LightSwitch\LightSwitchController.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Phone" Collapsed="true">
-    <Position X="18.5" Y="5" Width="1.5" />
+    <Position X="15" Y="6.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AARBBAAQACAAAIAAAAAAAAEAAAAAIASACAAAAYAAAEA=</HashCode>
       <FileName>Assets\Scripts\Items\Phone\Phone.cs</FileName>
@@ -90,7 +106,7 @@
     <Lollipop Orientation="Bottom" Position="0.21" />
   </Class>
   <Class Name="Radio" Collapsed="true">
-    <Position X="19.5" Y="3.75" Width="1.5" />
+    <Position X="17" Y="6.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAQBAAAAAAAAAJAAAAAAAAAAAAEAMAAAQAAAAAAAAAA=</HashCode>
       <FileName>Assets\Scripts\Items\Radio\Radio.cs</FileName>
@@ -98,7 +114,15 @@
     <Lollipop Orientation="Bottom" Position="0.2" />
   </Class>
   <Class Name="Thermometer" Collapsed="true">
-    <Position X="15.5" Y="3.75" Width="1.5" />
+    <Position X="14" Y="5" Width="1.5" />
+    <InheritanceLine Type="Item" ManuallyRouted="true">
+      <Path>
+        <Point X="14.75" Y="2.691" />
+        <Point X="14.75" Y="4.201" />
+        <Point X="14.75" Y="4.201" />
+        <Point X="14.75" Y="5" />
+      </Path>
+    </InheritanceLine>
     <TypeIdentifier>
       <HashCode>AAQAAAAAABAAAIAAEAAAAAAAAAQAIAAAAACBAIAAAJA=</HashCode>
       <FileName>Assets\Scripts\Items\Thermometer\Thermometer.cs</FileName>
@@ -106,43 +130,52 @@
     <Lollipop Orientation="Bottom" Position="0.179" />
   </Class>
   <Class Name="TVRemote" Collapsed="true">
-    <Position X="17.5" Y="3.75" Width="1.5" />
+    <Position X="12" Y="5" Width="1.5" />
+    <InheritanceLine Type="Item" ManuallyRouted="true">
+      <Path>
+        <Point X="14.75" Y="2.691" />
+        <Point X="14.75" Y="3.066" />
+        <Point X="12.75" Y="3.066" />
+        <Point X="12.75" Y="5" />
+      </Path>
+    </InheritanceLine>
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAJAAAAAAAAAAAAAAIAAAQAAAAAAAAQA=</HashCode>
       <FileName>Assets\Scripts\Items\TV\TVRemote.cs</FileName>
     </TypeIdentifier>
     <Lollipop Orientation="Bottom" Position="0.21" />
   </Class>
-  <Class Name="CrosshairItemDetection" Collapsed="true">
-    <Position X="28.75" Y="3" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAQABAAAAAAAAgAAAAAAEACAAAAAAAAAAAAEIAAAAAA=</HashCode>
-      <FileName>Assets\Scripts\Player\Cross\CrosshairItemDetection.cs</FileName>
-    </TypeIdentifier>
-  </Class>
   <Class Name="MoveCamera" Collapsed="true">
-    <Position X="32.25" Y="4" Width="1.5" />
+    <Position X="7.25" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Scripts\Player\Movement\MoveCamera.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="PickUpController" Collapsed="true">
-    <Position X="34" Y="4" Width="1.5" />
+    <Position X="3.75" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAQABQAAAAAAAgAAAAAAEACAAAAAAAAAAAAEIAAAAAA=</HashCode>
       <FileName>Assets\Scripts\Player\Movement\PickUpController.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="PlayerMovement" Collapsed="true">
-    <Position X="28.75" Y="5" Width="1.5" />
+    <Position X="3.75" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>BAQRICAEEyCAkQUEBIBFAAoAAAAAACAIAgBkIAACAEA=</HashCode>
       <FileName>Assets\Scripts\Player\Movement\PlayerMovement.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="FlushToilet" Collapsed="true">
-    <Position X="0.75" Y="1" Width="1.5" />
+    <Position X="18" Y="5" Width="1.5" />
+    <InheritanceLine Type="Item" ManuallyRouted="true">
+      <Path>
+        <Point X="14.75" Y="2.691" />
+        <Point X="14.75" Y="3.097" />
+        <Point X="18.75" Y="3.097" />
+        <Point X="18.75" Y="5" />
+      </Path>
+    </InheritanceLine>
     <TypeIdentifier>
       <HashCode>AAQAgAAAAAAAAJAAAAAAAEAAAAAAAAAAQAAAAAAAAAA=</HashCode>
       <FileName>Assets\Scripts\FlushToilet.cs</FileName>
@@ -150,7 +183,15 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="BasicThrowableItem" Collapsed="true">
-    <Position X="12" Y="1" Width="1.5" />
+    <Position X="19" Y="6.5" Width="1.5" />
+    <InheritanceLine Type="Item" ManuallyRouted="true">
+      <Path>
+        <Point X="14.75" Y="2.691" />
+        <Point X="14.75" Y="3.096" />
+        <Point X="19.75" Y="3.096" />
+        <Point X="19.75" Y="6.5" />
+      </Path>
+    </InheritanceLine>
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAABAAEAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
       <FileName>Assets\Scripts\Items\BasicThrowableItem.cs</FileName>
@@ -158,49 +199,49 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="ProjectileTank1" Collapsed="true">
-    <Position X="16.25" Y="1" Width="1.5" />
+    <Position X="5.5" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAACAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Scripts\Items\Easteregg\ProjectileTank1.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Menu" Collapsed="true">
-    <Position X="14.5" Y="1" Width="1.5" />
+    <Position X="5.5" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAIAAAABAIAAIAAAAAAAEAAAACQIAAAAAAAAAEA=</HashCode>
       <FileName>Assets\Scripts\Menu.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="SceneMenuManager" Collapsed="true">
-    <Position X="14.5" Y="2" Width="1.5" />
+    <Position X="3.75" Y="5.5" Width="2.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAgA=</HashCode>
       <FileName>Assets\Scripts\SceneMenuManager.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="SpeechToText" Collapsed="true">
-    <Position X="16.25" Y="2" Width="1.5" />
+    <Position X="3.75" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAGAAAAAASEBQAAAAAAAABBCAAACEAAAAMABAAAAAQA=</HashCode>
       <FileName>Assets\Scripts\SpeechToText.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Interface Name="IPlaceable" Collapsed="true">
-    <Position X="28.75" Y="6.25" Width="1.5" />
+    <Position X="5.5" Y="7" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAA=</HashCode>
       <FileName>Assets\Scripts\Items\IPlaceable.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="ISwitchable" Collapsed="true">
-    <Position X="30.5" Y="6.25" Width="1.5" />
+    <Position X="7.25" Y="7" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Scripts\Items\ISwitchable.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="ITriggerable" Collapsed="true">
-    <Position X="13" Y="3.5" Width="1.5" />
+    <Position X="3.75" Y="7" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Scripts\Items\ITriggerable.cs</FileName>
