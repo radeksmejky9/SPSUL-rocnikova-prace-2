@@ -1,3 +1,4 @@
+using Assets.Scripts;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -61,9 +62,11 @@ public class Radio : Item, ISwitchable, ITriggerable
 
     public void Trigger(Collider other)
     {
-        if (!is_enabled && other.tag == "Enemy") {
+        if (!is_enabled && other.tag == "Enemy")
+        {
             this.Switch();
         }
+        Stats.Instance.statsData.GhostEventCount++;
     }
 
 }

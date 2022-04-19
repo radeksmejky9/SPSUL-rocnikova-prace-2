@@ -1,3 +1,4 @@
+using Assets.Scripts;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -98,6 +99,7 @@ public class PickUpController : MonoBehaviour
             {
                 if (hit.transform.gameObject.tag == "Floor")
                 {
+                    Stats.Instance.statsData.BooksPlaced++;
                     equippedItem.GetComponent<Book>().Place(hit);
                     equippedItem = null;
                     slotFull = false;

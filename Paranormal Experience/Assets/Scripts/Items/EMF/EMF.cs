@@ -1,3 +1,4 @@
+using Assets.Scripts;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -14,6 +15,7 @@ public class EMF : Item, ISwitchable
     public AudioSource audio;
     private bool rdy = false;
     private Dictionary<Ghost.Evidence, bool> evidences;
+    bool countedInStats = false;
 
     public void Start()
     {
@@ -49,12 +51,15 @@ public class EMF : Item, ISwitchable
 
             if (emf && b)
             {
-                var i = Random.Range(0, 5);
+                var i = Random.Range(3, 5);
                 mat.SetTexture("_EmissionMap", t[i]);
                 if (i > 2)
                     audio.Play();
                 else
                     audio.Stop();
+                if (!countedInStats)
+                    Stats.Instance.statsData.EmfCount++;
+                countedInStats = true;
             }
             else
             {

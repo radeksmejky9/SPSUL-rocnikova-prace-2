@@ -1,3 +1,4 @@
+using Assets.Scripts;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -50,6 +51,7 @@ public class Book : Item, IPlaceable
         {
             if (other.tag == "Enemy" && !written)
             {
+                Stats.Instance.statsData.GhostWritingCount++;
                 written = true;
                 audio.Play();
                 bookContent.GetComponent<MeshRenderer>().materials = new Material[] { m[Random.Range(0, 4)] };

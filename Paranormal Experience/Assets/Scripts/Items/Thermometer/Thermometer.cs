@@ -1,3 +1,4 @@
+using Assets.Scripts;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -12,6 +13,7 @@ public class Thermometer : Item, ISwitchable
     public AudioSource switch_sound;
     private bool rdy = true;
     public Transform front;
+    bool countedInStats = false;
 
     System.Random r = new System.Random();
 
@@ -48,6 +50,9 @@ public class Thermometer : Item, ISwitchable
         {
             if (freezing)
             {
+                if (countedInStats == false)
+                    Stats.Instance.statsData.FreezingTempsCount++;
+                countedInStats = true;
                 text1.GetComponent<Text>().text = r.Next(-3, -2).ToString() + "." + r.Next(2, 9).ToString();
             }
             else

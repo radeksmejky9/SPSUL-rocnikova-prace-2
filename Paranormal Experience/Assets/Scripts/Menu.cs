@@ -5,9 +5,11 @@ using TMPro;
 using System;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using Assets.Scripts;
 
 public class Menu : MonoBehaviour
 {
+    public TMP_Text statText;
     List<bool> values = new List<bool>() { false, false, false, false, false };
     public Image[] images;
     Color ColorOn = new Color(0, 255, 0);
@@ -16,6 +18,52 @@ public class Menu : MonoBehaviour
     public Ghost ghost;
     public bool gameDone = false;
 
+    private void Update()
+    {
+        if (Stats.Instance.statsData == null)
+        {
+            if (SaveSystem.CheckIfFolderExists)
+            {
+                if (SaveSystem.CheckIfFileExists("MainSave"))
+                {
+                    SaveSystem.LoadPlayer("MainSave");
+                }
+                else
+                {
+                    Stats.Instance.statsData = new StatsData(0, 0, 0, 0, 0, 0, 0, 0, 0);
+                }
+            }
+            else
+            {
+                SaveSystem.CreateSaveFolder();
+            }
+        }
+        if (Stats.Instance.statsData.GameCount == 0)
+        {
+            statText.text = "Game count:  " + 0 + "\n" +
+                   "Winrate:  " + 0 + "\n" +
+                   "Salts placed:  " + Stats.Instance.statsData.SaltsPlaced.ToString() + "\n" +
+                   "Fingerprint count:  " + Stats.Instance.statsData.SaltProcs.ToString() + "\n" +
+                   "Books placed:  " + Stats.Instance.statsData.BooksPlaced.ToString() + "\n" +
+                   "Ghost writing count:  " + Stats.Instance.statsData.GhostWritingCount.ToString() + "\n" +
+                   "High EMF records:  " + Stats.Instance.statsData.EmfCount.ToString() + "\n" +
+                   "Freezing temperature count:  " + Stats.Instance.statsData.FreezingTempsCount.ToString() + "\n" +
+                   "Ghost event count: " + Stats.Instance.statsData.GhostEventCount.ToString();
+        }
+        else
+        {
+            statText.text = "Game count:  " + (Stats.Instance.statsData.GameCount.ToString()) + "\n" +
+                   "Winrate:  " + Math.Floor(((Double)Stats.Instance.statsData.WinCount / (Double)Stats.Instance.statsData.GameCount * 100.0)).ToString() + " %\n" +
+                   "Salts placed:  " + Stats.Instance.statsData.SaltsPlaced.ToString() + "\n" +
+                   "Fingerprint count:  " + Stats.Instance.statsData.SaltProcs.ToString() + "\n" +
+                   "Books placed:  " + Stats.Instance.statsData.BooksPlaced.ToString() + "\n" +
+                   "Ghost writing count:  " + Stats.Instance.statsData.GhostWritingCount.ToString() + "\n" +
+                   "High EMF records:  " + Stats.Instance.statsData.EmfCount.ToString() + "\n" +
+                   "Freezing temperature count:  " + Stats.Instance.statsData.FreezingTempsCount.ToString() + "\n" +
+                   "Ghost event count: " + Stats.Instance.statsData.GhostEventCount.ToString();
+        }
+
+    }
     public void Switch(int index)
     {
         int trueCount = GetTrueCount();
@@ -64,11 +112,15 @@ public class Menu : MonoBehaviour
                         won = false;
                 }
 
+                if (won)
+                {
+                    Stats.Instance.statsData.WinCount++;
+                }
+                Stats.Instance.statsData.GameCount++;
                 text.text = won ? "Congratulations you won the game!" : "You Lost!";
 
-
+                SaveSystem.SavePlayer("MainSave");
                 StartCoroutine(WaitForSceneLoad());
-
             }
 
 

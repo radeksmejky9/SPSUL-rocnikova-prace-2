@@ -1,3 +1,4 @@
+using Assets.Scripts;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -58,6 +59,7 @@ public class GhostMovement : MonoBehaviour
     {
         if (fp)
         {
+            Stats.Instance.statsData.SaltProcs++;
             a = 0;
             clips[0].Play();
             StartCoroutine("LeaveFootprint");
@@ -85,6 +87,7 @@ public class GhostMovement : MonoBehaviour
         {
             InteractionSoundCooldown = 0;
             clips[1].Play();
+            Stats.Instance.statsData.GhostEventCount++;
         }
 
 

@@ -1,3 +1,4 @@
+using Assets.Scripts;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -13,8 +14,9 @@ public class Salt : Item, IPlaceable
         if (charges > 0)
         {
 
-            Instantiate(salt, new Vector3(hit.point.x, hit.point.y+0.1f, hit.point.z), new Quaternion(0, 180, 180, 0));
+            Instantiate(salt, new Vector3(hit.point.x, hit.point.y + 0.1f, hit.point.z), new Quaternion(0, 180, 180, 0));
             charges--;
+            Stats.Instance.statsData.SaltsPlaced++;
         }
     }
 

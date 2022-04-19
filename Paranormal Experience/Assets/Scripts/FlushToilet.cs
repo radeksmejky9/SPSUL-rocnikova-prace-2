@@ -1,3 +1,4 @@
+using Assets.Scripts;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -25,6 +26,7 @@ public class FlushToilet : Item, ISwitchable, ITriggerable
         if (other.tag == "Enemy")
         {
             this.Switch();
+            Stats.Instance.statsData.GhostEventCount++;
         }
     }
     private void OnTriggerEnter(Collider other)
