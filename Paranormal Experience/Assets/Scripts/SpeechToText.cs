@@ -29,6 +29,7 @@ public class SpeechToText : MonoBehaviour
 
         keywords = new Dictionary<string, Action>();
         //easteregg
+
         keywords.Add("Lets Play a Game", () => { LetsPlayGame(); });
         //KILL/HATE/DIE/ATTACK
         keywords.Add("Should we leave", () => { PlayAudioClip("Kill"); });
@@ -59,7 +60,7 @@ public class SpeechToText : MonoBehaviour
         keywords.Add("Are you old", () => { PlayAudioClip(age); });
         keywords.Add("Are you young", () => { PlayAudioClip(age); });
         //CLOSE/FAR/BEHINDYOU/IMHERE
-        keywords.Add("Where are you", () => { PlayAudioClip("Behind you"); });
+        keywords.Add("Where are you", () => { PlayAudioClip("BehindYou"); });
         keywords.Add("Are you close", () => { PlayAudioClip("ImClose"); });
         keywords.Add("Can you show yourself", () => { PlayAudioClip("ImHere"); });
         keywords.Add("Give us a sign", () => { PlayAudioClip("ImClose"); });
@@ -80,6 +81,7 @@ public class SpeechToText : MonoBehaviour
 
     private void PlayAudioClip(string s)
     {
+        kr.Stop();
         foreach (var audioClip in audioClips)
         {
             if (audioClip.name == s)
@@ -89,6 +91,7 @@ public class SpeechToText : MonoBehaviour
             }
         }
         audioSource.Play();
+        kr.Start();
     }
     private void LetsPlayGame()
     {

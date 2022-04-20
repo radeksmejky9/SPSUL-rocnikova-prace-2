@@ -9111,7 +9111,9 @@ MonoBehaviour:
   - {fileID: 8300000, guid: e7634264893382049bfe1e44c7559086, type: 3}
   - {fileID: 8300000, guid: 7eadf190e7b57244e9fc53f2624399cc, type: 3}
   - {fileID: 8300000, guid: 534b2903b22729647bfb2996f899f98f, type: 3}
+  - {fileID: 8300000, guid: 129390f685ec0bf44bdbf5a2fbb75667, type: 3}
   - {fileID: 8300000, guid: 62bdec1ab7631c844a0ecc5fee57a534, type: 3}
+  - {fileID: 8300000, guid: e300dd4e0d0f4b74c98aaa6885e5a8ec, type: 3}
 --- !u!82 &1880474132
 AudioSource:
   m_ObjectHideFlags: 0
@@ -11788,6 +11790,10 @@ PrefabInstance:
     - target: {fileID: 7399757975049493286, guid: 85d808ae93cb70441b9a70a9dada0ad0, type: 3}
       propertyPath: m_Name
       value: SaltShaker
+      objectReference: {fileID: 0}
+    - target: {fileID: 7669719766876952492, guid: 85d808ae93cb70441b9a70a9dada0ad0, type: 3}
+      propertyPath: charges
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7924901583895134620, guid: 85d808ae93cb70441b9a70a9dada0ad0, type: 3}
       propertyPath: m_RootOrder
