@@ -18,7 +18,7 @@ public class Menu : MonoBehaviour
     public Ghost ghost;
     public bool gameDone = false;
 
-    private void Update()
+    private void Start()
     {
         if (Stats.Instance.statsData == null)
         {
@@ -38,6 +38,10 @@ public class Menu : MonoBehaviour
                 SaveSystem.CreateSaveFolder();
             }
         }
+    }
+    private void Update()
+    {
+
         if (Stats.Instance.statsData.GameCount == 0)
         {
             statText.text = "Game count:  " + 0 + "\n" +

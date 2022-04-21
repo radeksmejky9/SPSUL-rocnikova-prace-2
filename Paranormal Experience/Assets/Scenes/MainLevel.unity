@@ -3514,7 +3514,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &560946107
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5415,7 +5415,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1067676284
 Transform:
   m_ObjectHideFlags: 0
@@ -11068,6 +11068,10 @@ PrefabInstance:
       propertyPath: m_AngularDrag
       value: 0.05
       objectReference: {fileID: 0}
+    - target: {fileID: 3520937450271473786, guid: 4af4eab9605972e419080787580db806, type: 3}
+      propertyPath: Menu
+      value: 
+      objectReference: {fileID: 560946106}
     - target: {fileID: 3520937450271473786, guid: 4af4eab9605972e419080787580db806, type: 3}
       propertyPath: menu
       value: 

@@ -30,6 +30,7 @@ public class PlayerMovement : MonoBehaviour
     private float shootCooldownTank2;
     private float shootCooldown = 1;
     public TMP_Text text;
+    public GameObject Menu;
     float x, y;
 
 
@@ -63,7 +64,7 @@ public class PlayerMovement : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.J))
             {
                 menuEnabled = !menuEnabled;
-                menu.SetActive(menuEnabled);
+                Menu.SetActive(menuEnabled);
                 Cursor.lockState = menuEnabled ? CursorLockMode.None : CursorLockMode.Locked;
                 Cursor.visible = menuEnabled ? true : false; ;
             }
